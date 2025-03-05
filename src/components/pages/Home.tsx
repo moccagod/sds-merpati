@@ -1,7 +1,10 @@
+import Navbar from "../organisms/Navbar";
+
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <Navbar />
+      <h1>Homepage</h1>
     </div>
   );
 };
