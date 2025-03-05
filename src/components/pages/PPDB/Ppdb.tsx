@@ -1,10 +1,15 @@
 import Navbar from "../../organisms/Navbar";
+import BannerPpdb from "../../molecules/BannerPpdb";
+import Footer from "../../organisms/Footer";
+import FeatureList from "../../molecules/FeatureList";
 
 const Ppdb = () => {
   return (
     <div>
       <Navbar />
-      <h1>PPDB</h1>
+      <BannerPpdb />
+      <FeatureList />
+      <Footer />
     </div>
   );
 };

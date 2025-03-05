@@ -8,6 +8,7 @@ import Prestasi from "./components/pages/Prestasi/Prestasi";
 import Berita from "./components/pages/Berita/Berita";
 import Kontak from "./components/pages/Kontak/Kontak";
 import Ppdb from "./components/pages/PPDB/Ppdb";
+import Akreditasi from "./components/pages/Profil/Akreditasi";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/berita" element={<Berita />} />
       <Route path="/kontak" element={<Kontak />} />
       <Route path="/ppdb" element={<Ppdb />} />
+      <Route path="/akreditasi" element={<Akreditasi />} />
     </Routes>
   );
 }
