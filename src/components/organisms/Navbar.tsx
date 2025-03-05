@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavLogo from "../atoms/NavLogo";
 import NavMenu from "../molecules/NavMenu";
 import NavButton from "../atoms/NavButton";
-import Topbar from "../molecules/TopBar";
+import Topbar from "../molecules/Topbar";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
