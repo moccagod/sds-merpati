@@ -27,8 +27,8 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen }) => {
             { label: "Sejarah", href: "/sejarah" },
             { label: "Guru & Tendik", href: "/guru-dan-tendik" },
           ]}
-          iconClosed="/sds-merpati/images/arrowdown.png"
-          iconOpened="/sds-merpati/images/arrowup.png"
+          iconClosed="/tk-alirsyad/images/arrowdown.png"
+          iconOpened="/tk-alirsyad/images/arrowup.png"
         />
         <NavLink text="Prestasi" href="/prestasi" />
         <NavLink text="Berita" href="/berita" />

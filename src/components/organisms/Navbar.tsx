@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
             <img
               src={
                 isOpen
-                  ? "/sds-merpati/images/close.png"
-                  : "/sds-merpati/images/menu.png"
+                  ? "/tk-alirsyad/images/close.png"
+                  : "/tk-alirsyad/images/menu.png"
               }
               alt="Menu"
               className="w-6 h-6"
