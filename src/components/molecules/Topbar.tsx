@@ -9,7 +9,7 @@ const Topbar: React.FC = () => {
         <TopbarItem text="Senin - Jumat, 07:00 - 16:00" Icon={Clock} />
         <div className="flex gap-4">
           <TopbarItem text="+62 858-8307-9508" Icon={Phone} />
-          <TopbarItem text="tkslirsyadjakarta@gmail.com" Icon={Mail} />
+          <TopbarItem text="tkalirsyadjakarta@gmail.com" Icon={Mail} />
         </div>
       </div>
     </div>
