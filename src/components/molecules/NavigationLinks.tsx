@@ -1,7 +1,7 @@
 import React from "react";
 
 const links = [
-  { name: "Beranda", href: "/" },
+  { name: "Beranda", href: "/tk-alirsyad/" },
   { name: "Prestasi", href: "#/prestasi" },
   { name: "Berita", href: "#/berita" },
   { name: "Kontak", href: "#/kontak" },
