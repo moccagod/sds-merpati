@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
 const SambutanCard: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="container mx-auto px-6 py-12 bg-green-950">
       <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center md:items-start justify-between">
@@ -32,7 +35,10 @@ const SambutanCard: React.FC = () => {
             </p>
             {/* Container Tombol: Dibuat agar tombol berada di tengah di HP */}
             <div className="mt-4 flex justify-center md:justify-start">
-              <button className="bg-green-950 text-white px-5 py-2 rounded-full flex items-center gap-2 hover:bg-green-800 transition cursor-pointer">
+              <button
+                onClick={() => navigate("/sambutan-kepala-sekolah")}
+                className="bg-green-950 text-white px-5 py-2 rounded-full flex items-center gap-2 hover:bg-green-800 transition cursor-pointer"
+              >
                 Lebih Lengkap <FaArrowRight />
               </button>
             </div>
@@ -46,19 +52,19 @@ const SambutanCard: React.FC = () => {
           </h3>
           <div className="flex justify-center items-center gap-6 md:gap-10">
             <div className="text-center">
-              <p className="text-2xl font-bold text-gray-900">12</p>
+              <p className="text-2xl font-bold text-gray-900">3</p>
               <p className="text-sm text-gray-600">GURU & STAF</p>
             </div>
             <div className="h-12 w-px bg-gray-300"></div>{" "}
             {/* Garis separator */}
             <div className="text-center">
-              <p className="text-2xl font-bold text-gray-900">139</p>
+              <p className="text-2xl font-bold text-gray-900">25</p>
               <p className="text-sm text-gray-600">SISWA</p>
             </div>
             <div className="h-12 w-px bg-gray-300"></div>{" "}
             {/* Garis separator */}
             <div className="text-center">
-              <p className="text-2xl font-bold text-gray-900">7</p>
+              <p className="text-2xl font-bold text-gray-900">2</p>
               <p className="text-sm text-gray-600">ROMBEL</p>
             </div>
           </div>
