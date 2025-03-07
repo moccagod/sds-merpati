@@ -65,7 +65,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen }) => {
           <NavDropdown
             title="Akademik"
             items={[
-              { label: "Program Sekolah", href: "/proram-sekolah" },
+              { label: "Program Sekolah", href: "/program-sekolah" },
               { label: "Kalender Akademik", href: "/kalender-akademik" },
               { label: "Prestasi", href: "/prestasi" },
             ]}

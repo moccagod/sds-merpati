@@ -5,7 +5,7 @@ const KalenderAkademik = () => {
   return (
     <div>
       <Navbar />
-      <h1>Prestasi</h1>
+      <h1>Kalender Akademik</h1>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta adipisci
       corrupti modi, error quasi dicta libero cupiditate placeat atque quos
       quisquam assumenda. Itaque laborum ipsum earum dolorum hic velit alias
