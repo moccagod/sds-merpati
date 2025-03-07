@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavLink from "../atoms/NavLink";
 import NavDropdown from "./NavDropdown";
 import NavButton from "../atoms/NavButton";
@@ -8,6 +8,30 @@ interface NavMenuProps {
 }
 
 const NavMenu: React.FC<NavMenuProps> = ({ isOpen }) => {
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  // Fungsi untuk toggle dropdown
+  const handleToggleDropdown = (dropdownName: string) => {
+    setOpenDropdown((prev) => (prev === dropdownName ? null : dropdownName));
+  };
+
+  // Fungsi untuk menutup dropdown ketika klik di luar menu
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        !(event.target as HTMLElement).closest(".dropdown-menu") &&
+        !(event.target as HTMLElement).closest("button")
+      ) {
+        setOpenDropdown(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div>
       <nav
@@ -17,6 +41,8 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen }) => {
       >
         <div className="flex flex-col md:flex-row gap-4 p-4 md:p-0">
           <NavLink text="Beranda" href="/" />
+
+          {/* Dropdown Profil */}
           <NavDropdown
             title="Profil"
             items={[
@@ -31,13 +57,29 @@ const NavMenu: React.FC<NavMenuProps> = ({ isOpen }) => {
             ]}
             iconClosed="/tk-alirsyad/images/arrowdown.png"
             iconOpened="/tk-alirsyad/images/arrowup.png"
+            isOpen={openDropdown === "profil"}
+            onToggle={() => handleToggleDropdown("profil")}
           />
-          <NavLink text="Prestasi" href="/prestasi" />
+
+          {/* Dropdown Akademik */}
+          <NavDropdown
+            title="Akademik"
+            items={[
+              { label: "Program Sekolah", href: "/proram-sekolah" },
+              { label: "Kalender Akademik", href: "/kalender-akademik" },
+              { label: "Prestasi", href: "/prestasi" },
+            ]}
+            iconClosed="/tk-alirsyad/images/arrowdown.png"
+            iconOpened="/tk-alirsyad/images/arrowup.png"
+            isOpen={openDropdown === "akademik"}
+            onToggle={() => handleToggleDropdown("akademik")}
+          />
+
           <NavLink text="Berita" href="/berita" />
           <NavLink text="Kontak" href="/kontak" />
         </div>
 
-        {/* Ikon dan Tombol dimasukkan ke dalam menu burger di HP */}
+        {/* Ikon dan Tombol masuk ke menu burger di HP */}
         <div className="flex flex-col items-center md:hidden px-4 pb-4">
           <NavButton
             text="PPDB"

@@ -12,11 +12,11 @@ const WelcomeSection = () => {
 
       {/* Teks Selamat Datang */}
       <div className="md:w-1/2 md:pl-10 mt-6 md:mt-0">
-        <h3 className="text-lg font-semibold text-green-950">
+        <h3 className="text-lg font-semibold text-gray-900">
           Selamat Datang di
         </h3>
-        <h2 className="text-3xl font-bold text-gray-900">
-          Website TK Al-Irsyad
+        <h2 className="text-3xl font-bold text-green-950">
+          Website TK IT Al-Irsyad
         </h2>
         <p className="text-gray-600 mt-4">
           Website ini merupakan media informasi publik bagi masyarakat luas.

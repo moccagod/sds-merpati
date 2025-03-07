@@ -4,11 +4,13 @@ import SambutanKepalaSekolah from "./components/pages/Profil/SambutanKepalaSekol
 import GuruTendik from "./components/pages/Profil/GuruTendik";
 import Sejarah from "./components/pages/Profil/Sejarah";
 import VisiMisi from "./components/pages/Profil/VisiMisi";
-import Prestasi from "./components/pages/Prestasi/Prestasi";
+import Prestasi from "./components/pages/Akademik/Prestasi";
 import Berita from "./components/pages/Berita/Berita";
 import Kontak from "./components/pages/Kontak/Kontak";
 import Ppdb from "./components/pages/PPDB/Ppdb";
 import Akreditasi from "./components/pages/Profil/Akreditasi";
+import ProgramSekolah from "./components/pages/Akademik/ProgramSekolah";
+import KalenderAkademik from "./components/pages/Akademik/KalenderAkademik";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Route path="/kontak" element={<Kontak />} />
       <Route path="/ppdb" element={<Ppdb />} />
       <Route path="/akreditasi" element={<Akreditasi />} />
+      <Route path="/program-sekolah" element={<ProgramSekolah />} />
+      <Route path="/kalender-akademik" element={<KalenderAkademik />} />
     </Routes>
   );
 }
