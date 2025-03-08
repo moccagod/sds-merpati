@@ -1,3 +1,4 @@
+import EventSection from "../organisms/EventSection";
 import Footer from "../organisms/Footer";
 import HeroBanner from "../organisms/HeroBanner";
 import Navbar from "../organisms/Navbar";
@@ -13,6 +14,10 @@ const Home = () => {
       <WelcomeSection />
       <SambutanCard />
       <TeamSection />
+      <EventSection />
+      <div className="bg-white h-14">
+
+      </div>
       <Footer />
     </div>
   );

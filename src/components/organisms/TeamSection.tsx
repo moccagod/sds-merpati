@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     image: "/tk-alirsyad/images/teacher.png",
-    name: "Nengsing",
+    name: "Nengsih",
     role: "Guru",
     socials: {
       facebook: "#",
